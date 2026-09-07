@@ -1,0 +1,27 @@
+{
+  "name": "school-website-mpps-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter website dev",
+    "dev:accounting": "pnpm --filter accounting dev",
+    "build": "pnpm --filter website build",
+    "lint": "pnpm --filter website check",
+    "db:generate": "pnpm --filter @school/db db:generate",
+    "db:migrate": "pnpm --filter @school/db db:migrate",
+    "db:studio": "pnpm --filter @school/db db:studio",
+    "test": "node --env-file=tmp/.env.testing ./node_modules/vitest/vitest.mjs run",
+    "test:watch": "vitest",
+    "test:coverage": "node --env-file=tmp/.env.testing ./node_modules/vitest/vitest.mjs run --coverage"
+  },
+  "packageManager": "pnpm@11.22.0+sha512.1ff870c4c6133dfd88fb2afc46dd13d47f09c9794b438c6fdb47ca98caf3bc16381ee0be93a091b8e3824cf01f889f46d7d9e20910fb0be1ab0fb5baa80dd621",
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.2",
+    "@vitejs/plugin-react": "^6.0.4",
+    "@vitest/coverage-v8": "^4.1.10",
+    "dotenv": "^17.2.3",
+    "jsdom": "^29.1.1",
+    "vitest": "^4.1.10"
+  }
+}

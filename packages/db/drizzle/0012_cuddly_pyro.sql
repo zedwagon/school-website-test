@@ -1,0 +1,1 @@
+ALTER TABLE "accounting"."employee_contracts" DROP COLUMN "subject_overload";

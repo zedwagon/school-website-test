@@ -1,0 +1,1 @@
+ALTER TABLE "enrollment_forms" ADD COLUMN "status_registrar_note" text;
