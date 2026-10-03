@@ -1,0 +1,2 @@
+ALTER TABLE "accounting"."daily_cash_receipts" ADD CONSTRAINT "daily_cash_receipts_date_unique" UNIQUE("date");--> statement-breakpoint
+ALTER TABLE "accounting"."operational_cash_flow" ADD CONSTRAINT "operational_cash_flow_receipt_id_unique" UNIQUE("receipt_id");

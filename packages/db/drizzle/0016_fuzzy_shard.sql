@@ -1,0 +1,3 @@
+ALTER TABLE "accounting"."payroll_periods" ADD CONSTRAINT "payroll_periods_name_unique" UNIQUE("name");--> statement-breakpoint
+ALTER TABLE "accounting"."payroll_periods" ADD CONSTRAINT "payroll_periods_date_range_unique" UNIQUE("start_date","end_date");--> statement-breakpoint
+ALTER TABLE "accounting"."payroll_periods" ADD CONSTRAINT "payroll_periods_date_order" CHECK ("accounting"."payroll_periods"."start_date" <= "accounting"."payroll_periods"."end_date");
