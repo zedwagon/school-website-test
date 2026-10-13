@@ -1,0 +1,1 @@
+ALTER TABLE "accounting"."payrolls" ADD COLUMN "employee_type" "employee_type" DEFAULT 'teaching' NOT NULL;

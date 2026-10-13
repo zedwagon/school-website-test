@@ -1,0 +1,2 @@
+CREATE UNIQUE INDEX "school_years_one_active" ON "school_years" USING btree ("is_active") WHERE "school_years"."is_active" = true;--> statement-breakpoint
+ALTER TABLE "school_years" ADD CONSTRAINT "school_years_active_not_archived" CHECK (not "school_years"."is_active" or "school_years"."archived_at" is null);

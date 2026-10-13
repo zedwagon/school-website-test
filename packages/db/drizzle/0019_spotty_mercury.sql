@@ -1,0 +1,1 @@
+ALTER TABLE "accounting"."payrolls" ADD COLUMN "honorarium" numeric(10, 2) DEFAULT '0' NOT NULL;
